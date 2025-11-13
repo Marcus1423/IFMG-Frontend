@@ -5,24 +5,29 @@ class Retangulo{
         this.altura = altura;
     }
 
-    obterNome() {
-        valorNome = prompt('Digite o nome do retãngulo');
-    }
+    obterValores() {
+        this.nome = prompt('Digite o nome do retãngulo');
+        this.largura = Number(prompt('Digite a largura'));
+        this.altura = Number(prompt('Digite a altura'));
 
-    obterLargura() {
-        valorLargura = Number(prompt('Digite a largura'));
-    }
+        let escolheOperacao = prompt('Digite (p) para calcular o perimetro ou (a) para calcular a área.')
 
-    obterArea() {
-        valorAltura = Number(prompt('Digite a altura'));
+        if (escolheOperacao === 'p') {
+            this.calcularPerimetro();
+        } else if (escolheOperacao === 'a') {
+            this.calcularArea();
+        }
+
     }
 
     calcularPerimetro() {
-
+        let perimetro = 2 * (this.largura + this.altura);
+        alert(`O perimetro do retãngulo é ${perimetro}`);
     }
 
     calcularArea() {
-
+        let area = this.altura * this.largura;
+        alert(`A área de ${area}`);
     }
 
     atualizarLargura(novaLargura) {
@@ -33,6 +38,9 @@ class Retangulo{
 
     }
 }
+
+const retangulo1 = new Retangulo();
+retangulo1.obterValores();
 
 
 
