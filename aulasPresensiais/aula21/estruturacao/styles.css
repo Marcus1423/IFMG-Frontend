@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+h1 {
+    color: red;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    text-align: center;
+}
+
+main{
+    height: 1000px;
+    background-image: url(src/marcas-de-carros-de-luxo-lamborghini.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 20px;
+    
+}
+
+.listas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-self: center;
+    margin-top: 50px;
+    gap: 5px;
+}
+
+#login  label {
+    margin-top: 20px;
+}
+
+#login input {
+    height: 20px;
+}
+
+#login button {
+    width: 200px;
+    height: 25px;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+}
+
