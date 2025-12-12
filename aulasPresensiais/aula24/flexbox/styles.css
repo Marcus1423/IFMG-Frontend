@@ -1,0 +1,38 @@
+.containerPrincipal {
+    display: flex;
+    gap: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+}
+
+.containerPrincipal div {
+    background-color: aqua;
+    padding: 20px;
+    width: 50px;
+    align-items: center;
+}
+
+.containerSecundario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.containerSecundario div {
+    background-color: aqua;
+    padding: 20px;
+    width: 50px;
+    align-items: center;
+}
