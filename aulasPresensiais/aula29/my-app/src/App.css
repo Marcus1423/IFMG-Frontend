@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  border-radius: 8px;
+  border: 2px solid white;
+  padding: 0.6em 1.2em;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #61dafb;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
