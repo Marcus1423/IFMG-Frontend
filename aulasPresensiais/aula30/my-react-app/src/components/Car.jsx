@@ -1,4 +1,4 @@
-function Car (props){
+function Car(props){
     return (
         <>
              <h2>My {props.carinfo.name} {props.carinfo.model}!</h2>
