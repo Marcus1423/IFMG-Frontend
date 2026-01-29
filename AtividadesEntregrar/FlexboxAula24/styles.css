@@ -1,0 +1,62 @@
+* {
+    margin: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+header {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+article {
+    background-color: aqua;
+    padding: 20px;
+    width: 46%;
+    text-align: center;
+    align-items: center;
+}
+
+.textos  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 47%;
+    align-items: center;
+    margin: none;
+}
+
+.textos p {
+    text-align: center;
+    background-color: aqua;
+    padding: 10%;
+    width: 80%;
+    
+}
+
+main {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
