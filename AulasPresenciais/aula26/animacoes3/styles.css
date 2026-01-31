@@ -1,0 +1,14 @@
+div {
+width: 100px;
+height: 100px;
+background: red;
+position: relative;
+animation-name: myAnimation;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation {
+from {top: 0px;}
+to {top: 200px; background-color: blue;}
+}
