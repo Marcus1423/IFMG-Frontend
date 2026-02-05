@@ -1,9 +1,9 @@
 import styles from "./card.module.css";
 
-function Card({ imagem, titulo, descricao }) {
+function Card3({ imagem, titulo, descricao }) {
   return (
     <div>
-      <h1>Atividade 1: Card Reutilizável</h1>
+      <h1>Atividade 3: Seções com tailwind</h1>
       <div className={styles.card}>
         <img
           src={imagem}
@@ -18,4 +18,4 @@ function Card({ imagem, titulo, descricao }) {
   );
 }
 
-export default Card;
+export default Card3;

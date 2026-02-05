@@ -25,6 +25,9 @@ const Imagem = styled.img`
   border-radius: 8px;
 
 `
+const ExternalText = styled.h1`
+  color: ${({ theme }) => theme.text};
+`
 
 const Title = styled.h2`
   font-size: 1.2rem;
@@ -38,6 +41,8 @@ export default function Card2({ imagem, titulo, descricao }) {
 
   return (
     <>
+      <div>
+        <ExternalText>Atividade 2: Card com Styled Components</ExternalText>
         <DivCard>
         <Imagem
           src={imagem}
@@ -46,6 +51,7 @@ export default function Card2({ imagem, titulo, descricao }) {
         <Title>{titulo}</Title>
         <Description>{descricao}</Description>
       </DivCard>
+      </div>
     </>
       
     

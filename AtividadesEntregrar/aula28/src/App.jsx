@@ -6,6 +6,8 @@ import Card2 from './Components/Card2'
 import { darkTheme, lightTheme } from './styles/theme'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import GlobalStyle from './styles/GlobalStyle.js'
+import Card3 from './Components/Card3.jsx'
+import "./App.css"
 
 
 function App() {
@@ -18,8 +20,9 @@ function App() {
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
     <GlobalStyle />
     <nav>
-       <Link to="/">Atividade 1</Link>
-       <Link to="atividade2">Atividade 2</Link>
+       <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition">Atividade 1</Link>
+       <Link to="atividade2" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition">Atividade 2</Link>
+       <Link to="atividade3" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition">Atividade 3</Link>
     </nav>
     <Routes>
       <Route path='/' element={<Card  imagem={imagem}
@@ -38,6 +41,11 @@ function App() {
         </button>
        </>
       }/>
+
+      <Route path='atividade3' element={<Card3  imagem={imagem}
+        titulo="Card Reutilizável"
+        descricao="Este card usa CSS Modules e hover suave com variáveis CSS."/>} 
+      />
       </Routes>
     </ThemeProvider>
     </BrowserRouter>

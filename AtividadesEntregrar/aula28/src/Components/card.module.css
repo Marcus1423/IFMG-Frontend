@@ -5,6 +5,20 @@
   --text-color: #475569;
 }
 
+h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-link {
+  text-decoration: none;
+  background-color: #1e293b;
+}
+
 .card {
   background-color: var(--card-bg);
   border-radius: 12px;
