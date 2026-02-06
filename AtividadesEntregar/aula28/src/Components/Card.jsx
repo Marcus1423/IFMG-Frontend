@@ -3,7 +3,6 @@ import styles from "./card.module.css";
 function Card({ imagem, titulo, descricao }) {
   return (
     <div>
-      <h1>Atividade 1: Card Reutilizável</h1>
       <div className={styles.card}>
         <img
           src={imagem}

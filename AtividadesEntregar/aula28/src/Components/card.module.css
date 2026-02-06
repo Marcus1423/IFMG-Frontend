@@ -1,6 +1,6 @@
 :root {
-  --card-bg: #ffffff;
-  --card-bg-hover: #f1f5f9;
+  --card-bg: #f5f5f5;
+  --card-bg-hover: #ebeef1;
   --title-color: #1e293b;
   --text-color: #475569;
 }
