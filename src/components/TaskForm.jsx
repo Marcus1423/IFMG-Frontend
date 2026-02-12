@@ -1,18 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function ListaTarefas() {
-  const [tarefas, setTarefas] = useState([]);
-  const [novaTarefa, setNovaTarefa] = useState("");
+function TaskForm() {
+  const [tasks, setTasks] = useState(() => {
+    const storedTasks = localStorage.getItem("tasks");
+    return storedTasks ? JSON.parse(storedTasks) : [];
+  });
 
-  function adicionarTarefa() {
-    if (novaTarefa.trim() === "") return;
+  const [newTask, setNewTask] = useState("");
 
-    setTarefas([
-      ...tarefas,
-      { id: Date.now(), texto: novaTarefa }
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+  
+
+  function addTask() {
+    if (newTask.trim() === "") return;
+
+    setTasks([
+      ...tasks,
+      { id: Date.now(), text: newTask }
     ]);
 
-    setNovaTarefa("");
+    setNewTask("");
   }
 
   return (
@@ -21,22 +30,22 @@ function ListaTarefas() {
 
       <input
         type="text"
-        value={novaTarefa}
-        onChange={(e) => setNovaTarefa(e.target.value)}
+        value={newTask}
+        onChange={(e) => setNewTask(e.target.value)}
         placeholder="Digite uma tarefa"
       />
 
-      <button onClick={adicionarTarefa}>
+      <button onClick={addTask}>
         Adicionar
       </button>
 
       <ul>
-        {tarefas.map((tarefa) => (
-          <li key={tarefa.id}>{tarefa.texto}</li>
+        {tasks.map((task) => (
+          <li key={task.id}>{task.text}</li>
         ))}
       </ul>
     </div>
   );
 }
 
-export default ListaTarefas;
+export default TaskForm;
