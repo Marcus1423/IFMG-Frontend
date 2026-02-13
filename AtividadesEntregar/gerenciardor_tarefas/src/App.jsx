@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import TaskItem from './components/TaskForm'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from './pages/home'
+import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Completed from "./pages/Completed";
 import About from "./pages/about";
@@ -24,7 +24,6 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
       </BrowserRouter>
-      <TaskItem />
     </>
   )
 }
