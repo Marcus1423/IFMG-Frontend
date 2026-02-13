@@ -1,5 +1,9 @@
+import TaskForm from "../components/TaskForm";
+
 function Home() {
-    return
+    return (
+        <TaskForm />
+    )
 }
 
 export default Home;
