@@ -9,6 +9,7 @@ import Projects from './pages/Projects'
 import Completed from "./pages/Completed";
 import About from "./pages/about";
 import Header from './components/Header'
+import ProjectDetails from './pages/ProjectDetails'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path='/projects/:id' element={<ProjectDetails />} />
         <Route path="/completed" element={<Completed />} />
         <Route path="/about" element={<About />} />
       </Routes>
