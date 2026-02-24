@@ -3,17 +3,12 @@ import { createContext, useState, useEffect } from "react";
 export const ProjectContext = createContext();
 
 export function ProjectProvider({ children }) {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(() => {
+  const storedProjects = localStorage.getItem("projects");
+  return storedProjects ? JSON.parse(storedProjects) : [];
+  });
 
-  // 🔹 Carregar do localStorage
-  useEffect(() => {
-    const stored = localStorage.getItem("projects");
-    if (stored) {
-      setProjects(JSON.parse(stored));
-    }
-  }, []);
 
-  // 🔹 Salvar sempre que mudar
   useEffect(() => {
     localStorage.setItem("projects", JSON.stringify(projects));
   }, [projects]);
