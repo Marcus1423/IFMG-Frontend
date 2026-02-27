@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Carrinho de compras</h1>
+    <p id="informacaoCarrinho">Carrinho vazio, adicione seu produto abaixo</p>
+    <input id="produtoDesejado" type="text" placeholder="Adicionar produto">
+    <button id="adicionar" onclick="adicionaProduto()">Adicionar</button>
+
+    <p>Clique no botão abaixo para visualizar os produtos no carrinho</p>
+    <button onclick="mostraProduto()">Visualizar Produtos</button>
+    <p id="visualizarProdutos"></p>
+
+
+    <div id="container_editar">
+        <div id="editar">
+            <button onclick="editarProduto()">Editar produtos</button>
+            <p id="produtosParaEditar"></p>
+        </div>
+    </div>    
+
+    <p id="textoExclusao">Clique no botão abaixo para excluir o último produto da lista</p>
+    <button onclick="excluirValores()">Excluir</button>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
