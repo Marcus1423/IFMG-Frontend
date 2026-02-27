@@ -1,4 +1,3 @@
-
  Curso de Front-end com React – IFMG
 
 Este repositório tem como objetivo armazenar e organizar os arquivos desenvolvidos durante o **curso de Front-end em React** realizado pelo **IFMG**.
@@ -20,4 +19,4 @@ Esta pasta contém as **atividades propostas durante o curso**, organizadas em s
 
 ### 📌 2. AulasPresenciais
 Nesta pasta estão os **conteúdos trabalhados durante as aulas presenciais**, organizados aula.
-=======
+
