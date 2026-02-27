@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Completed from "./pages/Completed";
-import About from "./pages/about";
+import About from "./pages/About";
 import Header from './components/Header'
 import ProjectDetails from './pages/ProjectDetails'
 
