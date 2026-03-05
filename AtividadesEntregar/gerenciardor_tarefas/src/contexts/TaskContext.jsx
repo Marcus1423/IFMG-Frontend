@@ -22,7 +22,9 @@ useEffect(() => {
         id: Date.now(), 
         title,
         completed: false,
-        projectId
+        projectId,
+        description,
+        category
        }
     ]);
   }
