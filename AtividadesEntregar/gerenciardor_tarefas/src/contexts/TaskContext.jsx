@@ -13,18 +13,17 @@ useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  function addTask(title, projectId = null) {
-    if (title.trim() === "") return;
+  function addTask(data, projectId = null) {
 
     setTasks(prev => [
       ...prev,
       { 
-        id: Date.now(), 
-        title,
-        completed: false,
-        projectId,
-        description,
-        category
+        id: Date.now(),
+      title: data.title,
+      description: data.description,
+      category: data.category,
+      completed: false,
+      projectId
        }
     ]);
   }

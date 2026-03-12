@@ -22,7 +22,7 @@ function TaskForm({ projectId = null }) {
 
   function onSubmit(data) {
     addTask(data, projectId);
-    setTitle("");
+    reset();
   }
 
 
