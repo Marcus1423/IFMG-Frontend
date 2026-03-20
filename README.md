@@ -59,13 +59,6 @@ Cada módulo possui um tema específico do curso:
 
 ---
 
-## 🧪 Outras Pastas
-
-- **AtividadesTestePessoal**  
-  Espaço para testes, experimentos e estudos individuais.
-
----
-
 ## 🚀 Objetivo
 
 Este repositório foi criado para:
